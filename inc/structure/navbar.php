@@ -55,6 +55,15 @@ if ( ! function_exists( 'electro_departments_menu' ) ) {
 	}
 }
 
+if ( ! function_exists( 'electro_navbar_icons' ) ) {
+	/**
+	 * Displays search box in navbar
+	 */
+	function electro_navbar_icons() {
+		electro_get_template( 'sections/navbar-icons.php' );
+	}
+}
+
 if ( ! function_exists( 'electro_navbar_search' ) ) {
 	/**
 	 * Displays search box in navbar

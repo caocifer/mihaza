@@ -182,6 +182,7 @@ add_action( 'woocommerce_single_product_summary', 			'electro_template_loop_cate
 add_action( 'woocommerce_single_product_summary',			'electro_template_single_brand',				10 );
 add_action( 'woocommerce_single_product_summary',			'electro_template_loop_availability',			10 );
 add_action( 'woocommerce_single_product_summary',			'electro_template_single_divider',				11 );
+add_action( 'woocommerce_single_product_summary',   'electro_output_policy_section',      20 );
 add_action( 'woocommerce_single_product_summary',			'electro_loop_action_buttons',					15 );
 add_action( 'woocommerce_single_product_summary',			'woocommerce_template_single_sharing',			15 );
 add_action( 'woocommerce_single_product_summary',			'woocommerce_template_single_price',			25 );
@@ -201,6 +202,7 @@ add_action( 'electro_onsale_product_content',				'woocommerce_template_loop_prod
 add_action( 'electro_onsale_product_content',				'woocommerce_template_loop_price',				50 );
 add_action( 'electro_onsale_product_content',				'electro_deal_progress_bar',					60 );
 add_action( 'electro_onsale_product_content',				'electro_deal_countdown_timer',					70 );
+add_action( 'electro_onsale_product_content',		'electro_deal_cart_button',						70 );
 
 /**
  * Product On Sale Carousel

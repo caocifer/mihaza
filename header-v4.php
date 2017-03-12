@@ -33,7 +33,7 @@ add_action( 'electro_before_content',		'electro_primary_navbar', 	10 );
 		do_action( 'electro_before_header' ); ?>
 
 		<header id="masthead" class="site-header header-v3">
-			<div class="container <?php echo has_electro_mobile_header() ? 'hidden-md-down' : ''; ?>">
+			<div class="container">
 				<?php
 				/**
 				 * @hooked electro_row_wrap_start - 0

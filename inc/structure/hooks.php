@@ -12,25 +12,32 @@ add_action( 'electro_content_top', 			'electro_breadcrumb', 		10 );
 add_action( 'electro_header_v1',			'electro_row_wrap_start',	0  );
 add_action( 'electro_header_v1',			'electro_header_logo',		10 );
 add_action( 'electro_header_v1',			'electro_navbar_search',	20 );
-add_action( 'electro_header_v1',			'electro_navbar_wishlist',	40 );
-add_action( 'electro_header_v1',			'electro_navbar_compare',	50 );
+// add_action( 'electro_header_v1',			'electro_navbar_wishlist',	40 );
+// add_action( 'electro_header_v1',			'electro_navbar_compare',	50 );
+add_action( 'electro_header_v1',      'electro_navbar_icons', 50 );
 add_action( 'electro_header_v1',			'electro_row_wrap_end',		70 );
 add_action( 'electro_header_v1',			'electro_row_wrap_start',	80 );
 add_action( 'electro_header_v1',			'electro_vertical_menu',	90 );
-add_action( 'electro_header_v1',			'electro_secondary_nav',	95 );
+add_action( 'electro_header_v1',			'electro_handheld_nav',	20 );
+add_action( 'electro_header_v1',      'electro_secondary_nav',  95 );
 add_action( 'electro_header_v1',			'electro_row_wrap_end',		99 );
+
+add_action( 'electro_header',			'electro_navbar_search',	20 );
+add_action( 'electro_header',			'electro_handheld_nav',	20 );
+add_action( 'electro_header',			'electro_navbar_mini_cart',	20 );
 
 add_action( 'electro_header_v3',			'electro_row_wrap_start',	0  );
 add_action( 'electro_header_v3',			'electro_header_logo',		10 );
 add_action( 'electro_header_v3',			'electro_navbar_search',	20 );
+add_action( 'electro_header_v3',			'electro_handheld_nav',	20 );
 add_action( 'electro_header_v3',			'electro_navbar_wishlist',	40 );
 add_action( 'electro_header_v3',			'electro_navbar_compare',	50 );
 add_action( 'electro_header_v3',			'electro_row_wrap_end',		70 );
 
-add_action( 'electro_after_header',			'electro_handheld_header',	10 );
+// add_action( 'electro_after_header',			'electro_handheld_header',	10 );
 
-add_action( 'electro_header_handheld',		'electro_header_logo',		10 );
-add_action( 'electro_header_handheld',		'electro_handheld_nav',		20 );
+// add_action( 'electro_header_handheld',		'electro_header_logo',		10 );
+// add_action( 'electro_header_handheld',		'electro_handheld_nav',		20 );
 
 /**
  * Layout

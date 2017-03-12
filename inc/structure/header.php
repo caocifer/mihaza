@@ -216,7 +216,7 @@ if ( ! function_exists( 'electro_top_bar' ) ) {
 
 		if ( apply_filters( 'electro_enable_top_bar', true ) ) : ?>
 
-		<div class="top-bar <?php echo has_electro_mobile_header() ? 'hidden-md-down' : ''; ?>">
+		<div class="top-bar">
 			<div class="container">
 			<?php
 				wp_nav_menu( array(

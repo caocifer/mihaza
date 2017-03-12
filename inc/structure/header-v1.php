@@ -3,6 +3,34 @@
  * Template functions that hook to electro_header_v1
  */
 
+if ( ! function_exists( 'electro_primary_nav' ) ) {
+	/**
+	 * Displays Primary Navigation
+	 */
+	function electro_primary_nav() {
+		?>
+		<div class="primary-nav animate-dropdown">
+			<div class="clearfix">
+				 <button class="navbar-toggler hidden-sm-up pull-right flip" type="button" data-toggle="collapse" data-target="#default-header">
+				    	&#9776;
+				 </button>
+			 </div>
+
+			<div class="collapse navbar-toggleable-xs" id="default-header">
+				<?php
+					wp_nav_menu( array(
+						'theme_location'	=> 'primary-nav',
+						'container'			=> false,
+						'menu_class'		=> 'nav nav-inline yamm',
+						'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+						'walker'            => new wp_bootstrap_navwalker()
+					) );
+				?>
+			</div>
+		</div>
+		<?php
+	}
+}
 if ( ! function_exists( 'electro_vertical_menu' ) ) {
 	/**
 	 *

@@ -26,8 +26,8 @@
 	 */
 	do_action( 'electro_before_header' ); ?>
 
-	<header id="masthead" class="site-header<?php if ( ! apply_filters( 'electro_show_header_support_info', true ) ) { echo esc_attr( ' no-header-support-info' ); } ?>">
-		<div class="container <?php echo has_electro_mobile_header() ? 'hidden-md-down' : ''; ?>">
+	<header id="masthead" class="site-header header-v2">
+		<div class="container">
 			<?php
 			/**
 			 * @hooked electro_row_wrap_start - 0
